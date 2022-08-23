@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('http://fonts.cdnfonts.com/css/bauer');
+
+                
+* {
+    box-sizing: border-box;
+    font-family: 'Michroma', sans-serif;
+}
+
+body {
+    user-select: none;
+    text-align: center;
+    background: radial-gradient(rgb(1, 68, 68), rgb(5, 1, 41));
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+#root {
+    border: 10px solid rgba(27, 72, 219, 0.61);
+    border-radius: 15px 3px 15px 25px ;
+    max-width: 75%;
+    height: 97vh; 
+    margin: auto;
+    overflow: scroll;
+    color: white;
+    background: radial-gradient(rgb(2, 0, 82), rgb(6, 0, 29));
+}
+
+.title {
+    font-family: 'Bauer', sans-serif; 
+}
+
+#ticker-container {
+    border: 8px solid rgb(47, 40, 148);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1.4em;
+    margin: auto 15px;
+    
+}
+
+.min-tick {
+    padding: 0 5px;
+}
+.tickers {
+    display: flex;
+}
+
+.labeltitle {
+    font-size: 15px;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.minute-ticker, .control {
+   flex: 45%;
+}
+
+
+.time-left {
+    font-size: 350%;
+    font-family: 'Bauer', Michroma, sans-serif;
+}
+
+
+.controller {
+    margin: auto;
+    justify-content: space-around;
+}
+.controller > button {
+    max-width: 100px;
+    padding: 10px;
+}
+button {
+    background: rgb(5, 10, 75);
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 5px rgb(40, 109, 238);
+    outline: none;
+}
+button:hover {
+    background: rgb(1, 1, 41);
+    color: rgb(151, 158, 216);
+}
+
+#timer-label {
+    padding-top: 25px;
+    font-size: 1.4em;
+}
+button:active {
+    box-shadow: 0 2px rgb(40, 109, 238);
+    transform: translateY(4px);
+}
+footer {
+    margin-top: 70px;
+    font-size: 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 50px;
+}
+a {
+    text-decoration: none;
+    color: rgb(197, 220, 247);
+    font-size: 1.3em;
+}
+a:hover {
+    color: aqua;
+}
